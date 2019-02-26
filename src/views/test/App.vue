@@ -1,15 +1,10 @@
 <template>
     <div id="app">
-        <mainModule></mainModule>
+        <router-view></router-view>
     </div>
 </template>
 <script>
-import mainModule from './components/test';
 export default {
-    name: 'App',
-    components: {
-        mainModule
-    },
+    name: 'App'
 }
-
 </script>

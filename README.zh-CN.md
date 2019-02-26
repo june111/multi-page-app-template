@@ -4,7 +4,7 @@
 
 ## 介绍
 
-把 VUE-ClI 2.x 构建的 SAP 改为多页面应用。写了两个页面：主页和测试页。新增页面的话，复制 src/views/test 文件夹，然后把 test 改为目标名称即可。
+把 VUE-ClI 2.x 构建的 SAP 改为多页面应用。写了三个页面：主页，测试页和不带路由的单页面。新增页面的话，复制 src/views 下与需求对应的文件夹，然后把文件名改为目标名称即可。
 
 demo 教程：[VUE 单页面改造为多页面](https://june111.github.io/2019/02/22/spa-to-multiple-pages)
 
@@ -27,11 +27,19 @@ npm run start #开发
 
 浏览器访问：
 
-主页
+主页 (history 路由模式)
+
 * [http://localhost:8080/ ](http://localhost:8080/ )
 * [http://localhost:8080/test](http://localhost:8080/test)
 
-测试页：[http://localhost:8080/test.html](http://localhost:8080/test.html)
+测试页 (hash 路由模式)
+
+* [http://localhost:8080/test.html#/](http://localhost:8080/test.html#/)
+* [http://localhost:8080/test.html#/test](http://localhost:8080/test.html#/test)
+
+纯单页面 (不带路由)
+
+* [http://localhost:8080/single.html](http://localhost:8080/single.html)
 
 ## 发布
 ```bash

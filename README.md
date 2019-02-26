@@ -4,7 +4,7 @@ English | [简体中文](./README.zh-CN.md)
 
 ## Introduction
 
-Change the SAP built by VUE-ClI 2.x to a multi-page application. Here are two pages: the home page and the test page. If you want to add a new page, copy the src/views/test folder and change the test to the target name.
+Change the SAP built by VUE-ClI 2.x to a multi-page application. There are three pages: home page, test page and single page without routing. If you want to add new pages, copy the folder corresponding to the requirements under src/views, and then change the file name to the target name.
 
 Demo tutorial available at [VUE 单页面改造为多页面](https://june111.github.io/2019/02/22/spa-to-multiple-pages)
 
@@ -28,11 +28,19 @@ npm run dev
 ```
 App will be running at: 
 
-Homepage：
+Homepage (history mode)
+
 * [http://localhost:8080/ ](http://localhost:8080/ )
 * [http://localhost:8080/test](http://localhost:8080/test)
 
-Test page：[http://localhost:8080/test.html](http://localhost:8080/test.html)
+Test page (hash mode)
+
+* [http://localhost:8080/test.html#/](http://localhost:8080/test.html#/)
+* [http://localhost:8080/test.html#/test](http://localhost:8080/test.html#/test)
+
+Single page without routing (No router)
+
+* [http://localhost:8080/single.html](http://localhost:8080/single.html)
 
 ## Build 
 ```bash
