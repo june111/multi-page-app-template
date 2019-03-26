@@ -11,15 +11,8 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/newsapi': {
-        target: 'http://api.unitimes.pro',
-        pathRewrite: {
-          '^/newsapi': ''
-        },
-        changeOrigin: true,
-      },
       '/api':{
-          target:'http://v1-api.unitimes.pro',
+          target:'http://v1-api.xxxx',
           pathRewrite: {
             '^/api': ''
           },
